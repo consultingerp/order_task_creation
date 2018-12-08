@@ -4,3 +4,5 @@ onedrivesdk
 requests
 asyncio
 lxml
+relativedelta
+collections
