@@ -22,7 +22,7 @@
 {
     "name" : "Refinement New",
     "version" : "1.1",
-    "depends" : ['base', 'sale','sale_margin','sale_stock','account','sale_quotation_builder'],
+    "depends" : ['base', 'sale','sale_margin','sale_stock','account','sale_quotation_builder', 'sale_management'],
     "author" : "ThirdmindCS",
     "description": """Refinment module to cover all additional content in products and to provide billing / quotes with additional refinement products """,
     "website" : "www.thirdmindcs.com",
