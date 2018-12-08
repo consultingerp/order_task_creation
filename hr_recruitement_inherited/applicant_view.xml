@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="job_apply_form_inherited" inherit_id="website_hr_recruitment.apply" customize_show="True" name="Applicant Form">
+		    <xpath expr="//div[@id='wrap']/div/section[@id='forms']/form/div[3]" position="after">
+	            <div class="form-group form-field o_website_form_required_custom">
+	                <div class="col-md-3 col-sm-4 text-right">
+	                    <label class="control-label" for="salary_expected">Expected Salary</label>
+	                </div>
+	                <div class="col-md-7 col-sm-8">
+	                    <input type="text" class="form-control o_website_form_input" name="salary_expected" required=""/>
+	                </div>
+	            </div>
+		    </xpath>
+		</template>
+	</data>
+    <data>
+        <record id="hr_recruitment.model_hr_applicant" model="ir.model">         
+            <field name="website_form_default_field_id" ref="hr_recruitment.field_hr_applicant_description" />
+            <field name="website_form_access">True</field>
+            <field name="website_form_label">Apply for a Job</field>
+        </record>
+        <function model="ir.model.fields" name="formbuilder_whitelist">
+            <value>hr.applicant</value>
+            <value eval="[
+                'description',
+                'email_from',
+                'partner_name',
+                'partner_phone',
+                'job_id',
+                'department_id',
+                'salary_expected',
+            ]"/>
+        </function>
+    </data>
+</openerp>

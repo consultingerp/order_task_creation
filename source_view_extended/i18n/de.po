@@ -1,0 +1,48 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * refinement
+# 
+# Translators:
+# Fabian Liesch <fabian.liesch@gmail.com>, 2015
+# Wolfgang Taferner, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-04 14:41+0000\n"
+"PO-Revision-Date: 2016-10-04 09:46+0000\n"
+"Last-Translator: Wolfgang Taferner\n"
+"Language-Team: German (http://www.transifex.com/odoo/odoo-9/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+#. module: source_view_extended
+#: model:ir.model.fields,field_description:source_view_extended.field_res_partner_search_words
+#: model:ir.ui.view,arch_db:source_view_extended.view_partner_multiple_changes_inherit
+#: model:ir.ui.view,arch_db:source_view_extended.view_partner_search_view_inherit
+msgid "Search Words"
+msgstr "Suchwort"
+
+#. module: source_view_extended
+#: model:ir.model.fields,field_description:source_view_extended.field_product_template_vendor_sku
+msgid "Vendor SKU"
+msgstr "Lieferanten Art.Nr."
+
+#. module: source_view_extended
+#: model:ir.model.fields,field_description:source_view_extended.field_res_partner_est_budget
+msgid "Estimated Annual budget"
+msgstr "Geschätztes Jahresbudget"
+
+#. module: source_view_extended
+#: model:ir.model.fields,field_description:source_view_extended.field_res_partner_current_sale
+msgid "Sales this year (%)"
+msgstr "Gewonnenes Budget dieses Jahr (%)"
+
+#. module: source_view_extended
+#: model:ir.model.fields,field_description:source_view_extended.field_res_partner_prev_sale
+msgid "Sales previous year (%)"
+msgstr "Gewonnenes Budget Vorjahr (%)"

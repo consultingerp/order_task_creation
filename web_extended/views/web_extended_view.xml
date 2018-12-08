@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+
+<!-- Add theme CSS -->
+	<template id="assets_backend" inherit_id="web.assets_backend"
+	          name="Custom CSS and JS" priority="20">
+	    <xpath expr="." position="inside">
+	        <link rel="stylesheet" href="/web_extended/static/src/css/web_extended.css"/>
+	        <link href="/web_extended/static/src/less/statusbar.less" rel="stylesheet" type="text/less"/>
+	    </xpath>
+	</template>
+
+  </data>
+</openerp>
+

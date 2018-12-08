@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_project_project_misc_entry_user,project.project,model_miscellaneous_entry,project.group_project_user,1,0,0,0
+access_project_project_misc_supp_pay_user,project.project,model_misc_supplier_payment,project.group_project_user,1,0,0,0
+access_project_project_digital_sample_user,project.project,model_digital_sample,project.group_project_user,1,0,0,0
+access_project_project_sample_user,project.project,model_sample_sample,project.group_project_user,1,0,0,0
+access_project_project_misc_entry_mgr,project.project,model_miscellaneous_entry,project.group_project_manager,1,1,1,1
+access_project_project_misc_supp_pay_mgr,project.project,model_misc_supplier_payment,project.group_project_manager,1,1,1,1
+access_project_project_digital_sample_mgr,project.project,model_digital_sample,project.group_project_manager,1,1,1,1
+access_project_project_sample_mgr,project.project,model_sample_sample,project.group_project_manager,1,1,1,1
+
+
+
