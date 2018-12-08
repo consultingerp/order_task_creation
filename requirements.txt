@@ -4,4 +4,3 @@ onedrivesdk
 requests
 asyncio
 lxml
-relativedelta

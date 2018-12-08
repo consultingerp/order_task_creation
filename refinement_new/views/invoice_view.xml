@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="refinement_invoice_form" model="ir.ui.view">
+            <field name="name">account.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+				<xpath expr="//button[@name='invoice_open']" position="after">
+					<button type="action" name="%(refinement_new.invoice_layout_report)d"
+					string="Print Layout" class="btn-primary oe_highlight"/>
+				</xpath>
+
+			</field>
+			</record>
+
+        <record id="view_order_form_invoice_delivery_conditions" model="ir.ui.view">
+            <field name="name">account.invoice.form.inherit.delivery</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date_due']" position="after">
+                    <field name="delivery_condition" string="Delivery Time"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
+
+

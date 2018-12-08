@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_order_form_refinement" model="ir.ui.view">
+            <field name="name">sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']" position="before">
+                    <button name='compute_refinement_lines' type='object' string="Compute Branding Cost" attrs="{'invisible':[('state','!=','draft')]}" class="oe_highlight" groups="refinement_new.group_refinement_user, refinement_new.group_refinement_manager"/>
+                    <button name='reset_lines' type='object' string="Reset" attrs="{'invisible':[('state','!=','draft')]}" groups="refinement_new.group_refinement_user, refinement_new.group_refinement_manager"/>
+                </xpath>
+                <xpath expr="//field[@name='order_line']" position="after">
+                    <separator string="Refinement Lines" groups="refinement_new.group_refinement_user, refinement_new.group_refinement_manager"/>
+                    <field name="refine_brand_ids" nolabel="1" groups="refinement_new.group_refinement_user, refinement_new.group_refinement_manager">
+                        <tree editable="bottom" create="false">
+                            <field name='product_id' string="SKU"/>
+                            <field name="is_optional"/>
+                            <field name='position_id'/>
+                            <field name='branding_id'/>
+                            <field name='qty'/>
+                            <field name="product_uom_id"/>
+                            <field name="route_id"/>
+                            <field name='unit_price'/>
+                            <field name="cost_price"/>
+                            <field name="tax_id" widget="many2many_tags"/>
+                            <field name="price_tax" invisible="0"/>
+                            <field name='subtotal'/>
+                        </tree>
+                        
+                    </field>
+                <!-- <xpath expr="//field[@name='order_line']" position="inside">
+                    <field name="refine_total" widget="monetary" string="Branding Cost" class="oe_left"/>
+                </xpath> -->
+                </xpath>
+                <xpath expr="//field[@name='order_line']/form/group/group/field[@name='product_id']" position="after">
+                    <field name="brand_pos_id" domain="[('product_id','=',product_id)]" groups="refinement_new.group_refinement_user, refinement_new.group_refinement_manager"/>
+                    <field name="branding_id" context="{'model': 'sol', 'position_id': brand_pos_id, 'product_id':product_id}" groups="refinement_new.group_refinement_user, refinement_new.group_refinement_manager"/>
+                </xpath>
+
+                <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="after">
+                    <field name="brand_pos_id" domain="[('product_id','=',product_id)]" groups="refinement_new.group_refinement_user, refinement_new.group_refinement_manager"/>
+                    <field name="branding_id" context="{'model': 'sol', 'position_id': brand_pos_id, 'product_id':product_id}" groups="refinement_new.group_refinement_user, refinement_new.group_refinement_manager"/>
+                </xpath>
+                <xpath expr="//button[@name='print_quotation'][2]" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_cancel']" position="before">
+                    <button type="action" name="%(refinement_new.order_layout_quotation_report)d"
+                        string="Print Layout" class="btn-primary oe_highlight" states="draft"/>
+                    <button type="action" name="%(refinement_new.layout_confirm_order_report)d"
+                        string="Print Confirm Quotation" class="btn-primary oe_highlight" states="sent,sale"/>
+                </xpath>
+                <xpath expr="//field[@name='payment_term_id']" position="after">
+                    <field name="show_tier_price"/>
+                </xpath>
+            </field>
+        </record>
+<!--         <record model="ir.ui.view" id="sale_refinement_sale_order_line">
+            <field name="name">sale.order.line.refinement.view.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale_margin.sale_margin_sale_order_line"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='purchase_price']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record> -->
+        <record model="ir.ui.view" id="sale_refinement_sale_order_line">
+            <field name="name">sale.order.refinement.margin.view.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='purchase_price']" position="attributes">
+                    <attribute name="invisible">0</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_order_form_refinement_new_web" model="ir.ui.view">
+            <field name="name">sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="website_quote.sale_order_form_quote"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='print_quotation']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_order_refinement_tree_date" model="ir.ui.view">
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_tree"/>
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="layout_product" string="Product"/>
+                </xpath>
+                <xpath expr="//field[@name='requested_date']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='commitment_date']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_order_refinement_tree" model="ir.ui.view">
+            <field name="name">sale.order.refinement.tree</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_quotation_tree"/>
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="layout_product" string="Product"/>
+                </xpath>
+                <xpath expr="//field[@name='requested_date']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='commitment_date']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_order_form_inherit_sale_stock_add_delivery_condition" model="ir.ui.view">
+            <field name="name">sale.order.form.inherit5</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale_stock.view_order_form_inherit_sale_stock"/>
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='effective_date']" position="after">
+                    <field name="delivery_condition" string="Delivery Time"/>
+                </xpath>
+            </field>
+        </record>
+  </data>
+</openerp>
