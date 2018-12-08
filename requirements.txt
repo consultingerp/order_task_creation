@@ -3,3 +3,5 @@ six
 onedrivesdk
 requests
 asyncio
+lxml
+etree
