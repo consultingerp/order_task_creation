@@ -3,8 +3,3 @@ six
 onedrivesdk
 requests
 asyncio
-lxml
-datetime
-etree
-relativedelta
-collections
