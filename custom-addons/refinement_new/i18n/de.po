@@ -1,0 +1,540 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * refinement_new
+# 
+# Translators:
+# Fabian Liesch <fabian.liesch@gmail.com>, 2015
+# Wolfgang Taferner, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-04 14:41+0000\n"
+"PO-Revision-Date: 2016-10-04 09:46+0000\n"
+"Last-Translator: Wolfgang Taferner\n"
+"Language-Team: German (http://www.transifex.com/odoo/odoo-9/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_brand
+msgid "Brand"
+msgstr "Marke"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_sale_order_show_tier_price
+msgid "Show Tier Price"
+msgstr "Preisstaffeln anzeigen"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_cat_page
+msgid "Catalouge Page"
+msgstr "Katalogseite"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_material
+msgid "Material"
+msgstr "Stoff"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_chara
+msgid "Characteristics"
+msgstr "Charakteristik"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_dimension
+msgid "Dimension"
+msgstr "Größe"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+msgid "We quote you according to our T&C that you can find at http://www.source-promo.co.uk/TC/:"
+msgstr "Wir bieten Ihnen gem. unseren AGB zu finden unter http://www.source-werbeartikel.com/AGB/ an:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+msgid "Quote ID:"
+msgstr "Angebots Nr:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+msgid "Quotation"
+msgstr "Angebot"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Date:"
+msgstr "Vom:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Contact Person:"
+msgstr "Ansprechpartner:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Phone:"
+msgstr "Telefon:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "E-Mail:"
+msgstr "E-Mail:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "Item Nr:"
+msgstr "Artikelnummer:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "Item Nr."
+msgstr "Artikel Nr."
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "Imprint:"
+msgstr "Werbefläche:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+msgid "Particulars:"
+msgstr "Besonderheiten:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+msgid "Description:"
+msgstr "Beschreibung:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Price"
+msgstr "Preis"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "Advance Payment"
+msgstr "Vorksse"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Total"
+msgstr "Gesamt"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Total Net Sum:"
+msgstr "Summe (netto):"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+#: model:ir.model.fields,field_description:refinement_new.field_sale_order_delivery_condition
+msgid "Delivery time"
+msgstr "Lieferzeit"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.custom_format_report
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "About 3-4 weeks after order clarity"
+msgstr "Ca. 3-4 Wochen nach Auftragsklarheit"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Delivery"
+msgstr "Versand"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "EX WORKS"
+msgstr "Ab Werk"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confquotirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Payment"
+msgstr "Zahlung"
+
+#. module: refinement_new
+#: model:ir.ui.menu,name:refinement_new.refinement_parent_main
+#: model:ir.ui.menu,name:refinement_new.refinement_main
+msgid "Refinement"
+msgstr "Werbeanbringung"
+
+#. module: refinement_new
+#: model:ir.ui.menu,name:refinement_new.refinement_config
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_branding_ids
+#: model:ir.ui.menu,name:refinement_new.menu_branding_item
+#: model:ir.model.fields,field_description:refinement_new.branding_item_brand_item
+#: model:ir.model.fields,field_description:refinement_new.field_refine_branding_line_branding_id
+#: model:ir.model.fields,field_description:refinement_new.field_sale_order_line_branding_id
+#: model:ir.ui.view,arch_db:refinement_new.view_branding_item_form_view
+#: model:ir.ui.view,arch_db:refinement_new.view_branding_item_tree_view
+#: model:ir.actions.act_window,name:refinement_new.action_branding_item
+#: model:ir.ui.view,arch_db:refinement_new.view_branding_position_form_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_item_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_position_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Branding Item"
+msgstr "Werbeanbringung"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_item_list
+msgid "Item List"
+msgstr "Artikelliste"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_pre_cost_name
+#: model:ir.model.fields,field_description:refinement_new.field_handling_group_name
+#: model:ir.model.fields,field_description:refinement_new.field_branding_position_name
+#: model:ir.model.fields,field_description:refinement_new.field_branding_item_name
+#: model:ir.ui.view,arch_db:refinement_new.view_branding_item_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_form_view
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.handling_group_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_item_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_position_form_view
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Name"
+msgstr "Bezeichnung"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_branding_item_brand_item
+msgid "Branding ID"
+msgstr "Werbeanbringung ID"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.view_product_refinement_inherit_form_view
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_branding_ids
+msgid "Branding Items"
+msgstr "Werbeanbringungen"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_is_refinery
+msgid "Is Refinery"
+msgstr "ist Raffinerie"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_branding_item_pre_cost_ids
+#: model:ir.ui.view,arch_db:refinement_new.view_pre_cost_form_view
+#: model:ir.ui.view,arch_db:refinement_new.view_pre_cost_tree_view
+#: model:ir.actions.act_window,name:refinement_new.action_pre_cost
+#: model:ir.ui.view,arch_db:refinement_new.handling_group_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_item_tree_view
+#: model:ir.ui.menu,name:refinement_new.menu_pre_cost
+msgid "Pre Cost"
+msgstr "Vorkosten"
+
+#. module: refinement_new
+#: model:ir.ui.menu,name:refinement_new.menu_handling_cost
+msgid "Handling Cost"
+msgstr "Bearbeitungskosten"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_branding_item_no_color
+#: model:ir.ui.view,arch_db:refinement_new.view_branding_item_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_item_tree_view
+msgid "Number of Color"
+msgstr "Anzahl Farben"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_branding_item_selling_price
+#: model:ir.ui.view,arch_db:refinement_new.view_branding_item_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_form_view
+#: model:ir.ui.view,arch_db:refinement_new.handling_group_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_item_tree_view
+msgid "Selling Price"
+msgstr "Verkaufspreis"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_branding_item_purchase_price
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_form_view
+#: model:ir.ui.view,arch_db:refinement_new.handling_group_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_item_form_view
+msgid "Purchase Price"
+msgstr "Einkaufspreis"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_handling_group_product_id
+#: model:ir.model.fields,field_description:refinement_new.field_pre_cost_product_id
+msgid "Product ID"
+msgstr "Art. Nr."
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_branding_item_product_id
+#: model:ir.ui.view,arch_db:refinement_new.view_branding_position_form_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_position_form_view
+#: model:ir.ui.view,arch_db:refinement_new.branding_position_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "SKU"
+msgstr "Art. Nr."
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_pre_cost_product_id
+msgid "Product ID"
+msgstr "Art. Nr."
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_pre_cost_is_variable_cost
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_form_view
+msgid "Is Variable Cost"
+msgstr "Ist variable"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_is_optional
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_form_view
+msgid "Is Option"
+msgstr "Ist optional"
+
+#. module: refinement_new_
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_is_optional
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Optional"
+msgstr "optional"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_handling_group_id
+#: model:ir.actions.act_window,name:refinement_new.action_handling_group
+#: model:ir.ui.view,arch_db:refinement_new.handling_group_tree_view
+#: model:ir.model.fields,field_description:refinement_new.field_handling_group_handle_grp
+#: model:ir.ui.view,arch_db:refinement_new.view_product_refinement_inherit_form_view
+msgid "Handling Group"
+msgstr "Handling Gruppen ID"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_sale_order_refine_brand_ids
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Refinement Lines"
+msgstr "Werbeanbringungspositionen"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_sale_order_margin
+msgid "Margin"
+msgstr "Marge"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_refine_branding_line_position_id
+#: model:ir.model.fields,field_description:refinement_new.field_sale_order_line_brand_pos_id
+#: model:ir.ui.view,arch_db:refinement_new.view_branding_position_form_view
+#: model:ir.ui.menu,name:refinement_new.menu_branding_position
+#: model:ir.ui.view,arch_db:refinement_new.branding_position_tree_view
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Branding Position"
+msgstr "Werbefläche"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_refine_branding_line_precost_id
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_tree_views
+#: model:ir.ui.view,arch_db:refinement_new.pre_cost_form_view
+msgid "PreCost ID"
+msgstr "Vorkosten ID"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_refine_branding_line_qty
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Quantity"
+msgstr "Menge"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+#: model:ir.model.fields,field_description:refinement_new.field_sale_order_note
+#: model:ir.model.fields,field_description:refinement_new.field_account_invoice_comment
+msgid "Note:"
+msgstr "Bemerkung:"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_refine_branding_line_unit_price
+msgid "Unit Price"
+msgstr "Stückpreis"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_refine_branding_line_subtotal
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Subtotal"
+msgstr "Summe"
+
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Compute Branding Cost"
+msgstr "Werbeanbringung berechnen"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Reset"
+msgstr "Reset"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Branding Cost"
+msgstr "Werbeanbringungskosten"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+#: model:ir.ui.view,arch_db:refinement_new.refinement_invoice_form
+#: model:ir.ui.view,arch_db:refinement_new.refinement_invoice_form
+msgid "Print Layout"
+msgstr "Drucken"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Refinement Options"
+msgstr "Werbeanbringung"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_refinement_info
+msgid "Refinement Information"
+msgstr "Refinement Informationen"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Invoice To:"
+msgstr "Rechnungsadresse:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Delivery Adress:"
+msgstr "Lieferadresse:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Invoice"
+msgstr "Rechnung"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Customer:"
+msgstr "Kundennummer:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Taxes:"
+msgstr "Steuern"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Total (Incl. Taxes):"
+msgstr "Gesamt (Brutto):"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "We invoice you according to our T&amp;C (www.source-promo.co.uk/TC) as follows:"
+msgstr "Wir berechnen Ihnen gem. unseren AGB, zu finden unter www.source-werbeartikel.com/AGB/, wie folgt:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "We offer you according to our T&amp;C (www.source-promo.co.uk) as follows:"
+msgstr "Wir bestätigen Ihnen gem. unseren AGB zu finden unter www.source-werbeartikel.com/AGB/ wie folgt:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "SO Number:"
+msgstr "Angebotsnummer:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "Order"
+msgstr "Auftragsbestätigung"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.view_order_form_refinement
+msgid "Print Confirm Quotation"
+msgstr ""
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Bank Details:"
+msgstr "Bankdaten:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "Bank Name:"
+msgstr "Bankname:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "IBAN:"
+msgstr "IBAN:"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_invoice_layout
+msgid "BIC:"
+msgstr "BIC:"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_cust_terif_num
+msgid "Customs Tariffs Number"
+msgstr "Zolltarifnummer"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_mfg_country
+msgid "Country of Manufacturer"
+msgstr "Herkunftsland"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_self_life
+msgid "Shelf Life"
+msgstr "Haltbarkeit"
+
+#. module: refinement_new
+#: model:ir.model.fields,field_description:refinement_new.field_product_template_brand_inf
+msgid "Branding Information"
+msgstr "Werbefläche"
+
+#. module: refinement_new
+#: model:delivery.item,name:refinement_new.delivery_condition_1
+msgid "About 3-5 weeks after order clarity"
+msgstr "Ca. 3-5 Wochen nach Auftragsklarheit"
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "Please contact us in case you have questions regarding your quotation or changed project requirements.<br/>We are happy to consult you.Our office hours are Mo-Fr. 8:00 to 18:00."
+msgstr "Kontaktieren Sie uns, wenn Sie Fragen zum Angebot oder veränderte Projektanforderungen haben.<br/>Wir beraten Sie gerne.Wir sind telefonisch erreichbar von Mo-Fr. von 8:00 bis 18:00 Uhr."
+
+#. module: refinement_new
+#: model:ir.ui.view,arch_db:refinement_new.report_refinement_order_layout
+#: model:ir.ui.view,arch_db:refinement_new.report_confirm_order_layout
+msgid "For technical reasons, we reserve the right to make a short or excess delivery of up to 10%.Any additional costs incurred by film or repro work will be charged additionally.<br/>We refund the difference in case of a short delivery."
+msgstr "Der Zwischenverkauf ist vorbehalten. Aus technischen Gründen behalten wir uns die Mehr- oder Minderlieferung von 10% vor.Bei einer Minderlieferung erstellen wir Ihnen eine entsprechende Gutschrift. Eine Nachproduktion oder Ähnliches ist ausgeschlossen.<br/>Bei einer Mehrlieferung wird Ihnen diese entsprechend berechnet."
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="delivery_condition_1" model="delivery.item">
+            <field name="name">About 3-5 weeks after order clarity</field>
+        </record>
+    </data>
+</openerp>

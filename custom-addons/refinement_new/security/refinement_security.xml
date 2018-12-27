@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+	   <!--  <record id="group_refinement_applicable" model="res.groups">
+	        <field name="name">Allow Refinement</field>
+	        <field name="category_id" ref="base.module_category_hidden"/>
+	    </record> -->
+        <record model="ir.module.category" id="module_category_refinement">
+            <field name="name">Refinement</field>
+            <field name="description">Allows User to create Quality check configuration parameters and perform operation on Quality check on incoming shipments</field>
+            <field name="sequence">6</field>
+        </record>
+        
+	    <record id="group_refinement_user" model="res.groups">
+	        <field name="name">Refinement User</field>
+	        <field name="category_id" ref="refinement_new.module_category_refinement"/>
+	        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+	    </record>
+
+	    <record id="group_refinement_manager" model="res.groups">
+	        <field name="name">Refinement Manager</field>
+	        <field name="category_id" ref="refinement_new.module_category_refinement"/>
+	        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+	    </record>
+    </data>
+</openerp>
